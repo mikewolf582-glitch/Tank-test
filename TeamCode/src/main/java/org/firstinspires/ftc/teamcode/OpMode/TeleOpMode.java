@@ -14,6 +14,6 @@ public class TeleOpMode extends CommandOpMode {
         DriveTrain driveTrain= new DriveTrain(hardwareMap);
         GamepadEx driver = new GamepadEx(gamepad1);
 
-        driveTrain.setDefaultCommand(new DriveCommands(driveTrain, ()-> driver.getLeftY(), driver::getRightX));
+        driveTrain.setDefaultCommand(new DriveCommands(driveTrain, ()-> driver.getLeftY(), driver::getRightX))  ;
     }
 }
