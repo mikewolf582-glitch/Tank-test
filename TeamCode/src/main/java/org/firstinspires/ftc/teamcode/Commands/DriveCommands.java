@@ -22,6 +22,6 @@ public class DriveCommands extends CommandBase {
 
     @Override
     public void execute() {
-        driveTrain.drive(leftY.getAsDouble(), rightX.getAsDouble());
+        driveTrain.drive(-leftY.getAsDouble(), -rightX.getAsDouble());
     }
 }
